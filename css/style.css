@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --blue: #5e72e4;
+  --indigo: #5603ad;
+  --purple: #8965e0;
+  --pink: #f3a4b5;
+  --red: #f5365c;
+  --orange: #fb6340;
+  --yellow: #ffd600;
+  --green: #2dce89;
+  --teal: #11cdef;
+  --cyan: #2bffc6;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-dark: #32325d;
+  --light: #ced4da;
+  --lighter: #e9ecef;
+  --primary: #e14eca;
+  --secondary: #f4f5f7;
+  --success: #00f2c3;
+  --info: #1d8cf8;
+  --warning: #ff8d72;
+  --danger: #fd5d93;
+  --light: #adb5bd;
+  --dark: #212529;
+  --default: #344675;
+  --white: #ffffff;
+  --neutral: #ffffff;
+  --darker: black;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+/* *,*::after,*::before{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+font-family: Arial;
+font-size: 16px;
+margin: 0;
+background: #fff;
+color: #000;
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 100vh;
+} */
+
+.container{
+    width: 90%;
+}
+h1{
+    text-align: center;
+    font-size: 46px;
+}
+#canvas{
+    width: 100%;
+}
